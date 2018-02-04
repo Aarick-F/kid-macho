@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
 body {
 	margin: 0;
 	padding: 0;
 	background-color: #000;
+	font-family: 'Roboto', sans-serif;
 }
 
-.container {
+.headerBackground {
+	position: absolute;
 	height: 100vh;
 	width: 100%;
 	margin: 0;
@@ -12,7 +16,7 @@ body {
 	background-image: url("../images/kiddos.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	filter: blur(3px);
+	filter: blur(5px) grayscale();
 	z-index: -1;
 }
 
@@ -24,11 +28,52 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-family: arial;
 	z-index: 1;
 	background: transparent;
 }
 
-#name h1 {
-	color: #FFF;
+#name img {
+	width: 25%;
+	animation: coffee 0.3s step-end infinite;
+}
+
+#quotes {
+	width: 100%;
+	background: #e7ef00;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	font-weight: bold;
+	text-align: center;
+}
+
+#quotes div {
+	margin: 20px;
+	width: 30%;
+}
+
+#quotes div p {
+	font-size: 1.3em;
+}
+
+@keyframes coffee {
+	0% {
+		transform: translate(0px, 0px);
+	}
+	20% {
+		transform: translate(-1px, 1px);
+	}
+	40% {
+		transform: translate(0px, -1px);
+	}
+	60% {
+		transform: translate(1px, 1px);
+	}
+	80% {
+		transform: translate(-1px, -1px);
+	}
+	100% {
+		transform: translate(0px, 0px);
+	}
 }
