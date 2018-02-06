@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #000;
+	font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+.headerBackground {
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-image: url("../images/kiddos.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+	filter: blur(5px) grayscale();
+	z-index: -1;
+}
+
+#name {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	background: transparent;
+}
+
+#name img {
+	width: 30%;
+	animation: coffee 0.3s step-end infinite;
+}
+
+#quotes {
+	width: 100%;
+	background: #e7ef00;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	font-weight: bold;
+	text-align: center;
+}
+
+#quotes div {
+	margin: 20px;
+	width: 25%;
+	border-left: 6px solid #222;
+}
+
+#quotes div p {
+	font-size: 1.3em;
+	padding-left: 15px;
+	text-shadow: 1px 1px #ffc6c6;
+}
+
+#videoFeature {
+	display: flex;
+	background-color: #222;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	color: #e7ef00;
+	text-shadow: 1px 1px #ffc6c6;
+	text-align: center;
+	border-bottom: 10px solid #e7ef00;
+}
+
+#videoFeature div {
+	margin: 30px 20px;
+}
+
+#videoFeature iframe {
+	box-shadow: 0px 6px #e7ef00;
+}
+
+#social {
+	display: flex;
+	width: 100%;
+	background-color: #222;
+	color: #e7ef00;
+	justify-content: center;
+	align-items: center;
+}
+
+#social ul {
+	list-style: none;
+	margin: 0;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+#social ul li {
+	margin: 40px 15px;
+}
+
+#footer {
+	display: flex;
+	color: #e7ef00;
+	justify-content: flex-end;
+	align-items: center;
+	font-size: 10px;
+	margin-right: 20px;
+}
+
+.link:hover {
+	color: #ffc6c6;
+	transition: 0.3s;
+}
+
+a {
+	text-decoration: none;
+	color: #e7ef00;
+}
+
+a:visited {
+	color: #e7ef00;
+}
+
+@media screen and (max-width: 1024px) {
+	#name img {
+		width: 50%;
+	}
+}
+
+@keyframes coffee {
+	0% {
+		transform: translate(0px, 0px);
+	}
+	20% {
+		transform: translate(-1px, 1px);
+	}
+	40% {
+		transform: translate(0px, -1px);
+	}
+	60% {
+		transform: translate(1px, 1px);
+	}
+	80% {
+		transform: translate(-1px, -1px);
+	}
+	100% {
+		transform: translate(0px, 0px);
+	}
+}

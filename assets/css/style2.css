@@ -1,4 +1,7 @@
+/*PREFIXED VERSION OF STYLE*/
+
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
 
 body {
 	margin: 0;
@@ -26,6 +29,7 @@ body {
 	background-image: url("../images/kiddos.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: top;
 	-webkit-filter: blur(5px) grayscale();
 	        filter: blur(5px) grayscale();
 	z-index: -1;
@@ -50,7 +54,7 @@ body {
 }
 
 #name img {
-	width: 25%;
+	width: 30%;
 	-webkit-animation: coffee 0.3s step-end infinite;
 	        animation: coffee 0.3s step-end infinite;
 }
@@ -74,7 +78,7 @@ body {
 
 #quotes div {
 	margin: 20px;
-	width: 30%;
+	width: 25%;
 	border-left: 6px solid #222;
 }
 
@@ -97,12 +101,18 @@ body {
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
 	color: #e7ef00;
+	text-shadow: 1px 1px #ffc6c6;
 	text-align: center;
 	border-bottom: 10px solid #e7ef00;
 }
 
 #videoFeature div {
-	margin: 20px;
+	margin: 30px 20px;
+}
+
+#videoFeature iframe {
+	-webkit-box-shadow: 0px 6px #e7ef00;
+	        box-shadow: 0px 6px #e7ef00;
 }
 
 #social {
@@ -127,6 +137,8 @@ body {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
@@ -166,9 +178,14 @@ a {
 	color: #e7ef00;
 }
 
-
 a:visited {
 	color: #e7ef00;
+}
+
+@media screen and (max-width: 1024px) {
+	#name img {
+		width: 50%;
+	}
 }
 
 @-webkit-keyframes coffee {
