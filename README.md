@@ -1,2 +1,2 @@
 # kid-macho
-Web Page for Atlanta Punk Outfit Kid Macho
+Web Page for the now-dead Atlanta Punk Outfit Kid Macho
